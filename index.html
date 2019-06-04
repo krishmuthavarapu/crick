@@ -14,13 +14,36 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
- 
+ <style>
+ .logo-pop{
+   width: 130px;
+ }
+ .sect{
+   height: 100%;
+ }
+ @media only screen and (max-width: 600px) {
+  .logo-pop {
+    width:50px
+  }
+  .sect{
+    height: auto;
+  }
+  body{
+    background-size: initial !important
+  }
+}
+ </style>
 </head>
 
-<body   style="background-image: url('img/bat.jpg'); background-repeat: no-repeat; background-size: cover;">
-  <section class="mask rgba-black-light overflow-hidden" style="height:100%;    background-color: rgba(0,0,0,.5);">
-<div class="container">
+<body   style="background-image: url('img/Ads1.jpg'); background-repeat: no-repeat; background-size: cover;">
+  <section class="mask rgba-black-light overflow-hidden sect" style=" background-color: rgba(0,0,0,.5);">
+<div class="container-fluid">
+
+    <div>
+    </div>
     <div class="text-center white-text mx-5 mt-5 wow fadeIn">
+        <img src="img/logo.png" style="float: left;" class="logo-pop bg-transparent" alt="">
+
         <h1 class="mb-2 font-weight-bolder  ">
           <strong>Choose your winner</strong>
         </h1>
@@ -28,16 +51,42 @@
         <p>
           <strong>And Win the hyderabad's favorite popcorn for free </strong>
         </p>
-
+     
         <small>Match on Sat 4th June, Sophia Gardens</small>
 
       </div>
+     <div class="container mt-0 pt-0">
+        <form class="">
+            <!-- Grd row -->
+            <div class="form-row mt-lg-5 mt-3">
+              <!-- Grid column -->
+              <div class="col-lg-4 pl-lg-5 p-1">
+                <!-- Default input -->
+                <input type="text" class="form-control" placeholder="name">
+              </div>
+              <!-- Grid column -->
+          
+              <!-- Grid column -->
+              <div class="col-lg-4 pl-lg-5 p-1">
+                <!-- Default input -->
+                <input type="text" class="form-control" placeholder="email">
+              </div>
+              <div class="col-lg-4 pl-lg-5 p-1">
+                  <!-- Default input -->
+                  <input type="text" class="form-control" placeholder="location">
+                </div>
+              <!-- Grid column -->
+              
+            </div>
+            <!-- Grd row -->
+          </form>
+     </div>
     <div class="row justify-content-center d-flex mt-4">
         <div class="col-4 col-sm-4 text-center ">
           <div >
-              <img src="img/team/in.png" width="200px" class="img-fluid hoverable" alt="">
+              <img src="img/team/ind-f.png" width="200px" class="img-fluid hoverable" alt="">
           </div>
-          <button style="    padding: 8px 20px 8px 20px;" type="button" class="btn btn-primary ">India</button>
+          <button style="    padding: 8px 20px 8px 20px;" type="button" class="btn btn-primary mt-lg-4">India</button>
           <div class="custom-control custom-radio d-inline-block">
               <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
               <label class="custom-control-label" for="defaultUnchecked"></label>
@@ -48,7 +97,7 @@
         <div class="col-2 col-sm-2 text-center">
             <div class="">
                 <div >
-                    <img src="img/team/cup.png" width="150px" class="img-fluid" alt="">
+                    <img src="img/cup.png" width="150px" class="img-fluid" alt="">
                 </div>   
                 <h3 class="text-white mt-3 font-italic font-weight-bold">VS</h3>           
               </div>
@@ -56,42 +105,20 @@
         
         <div class="col-4 col-sm-4 text-center">
           <div class="">
-              <img src="img/team/ran.png" width="200px" class="img-fluid hoverable" alt="">
+              <img src="img/team/sa-f.png" width="200px" class="img-fluid hoverable" alt="">
 
           </div>
-          <button style="    padding: 8px 20px 8px 20px;" type="button" class="btn btn-primary">Bangladesh</button>
+          <button style="    padding: 8px 20px 8px 20px;" type="button" class="btn btn-primary mt-lg-4">South Africa</button>
           <div class="custom-control custom-radio d-inline-block">
               <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" >
               <label class="custom-control-label" for="defaultChecked"></label>
             </div>
         </div>
       </div>
-          <form class="">
-              <!-- Grd row -->
-              <div class="form-row mt-lg-5 mt-3">
-                <!-- Grid column -->
-                <div class="col-lg-4 pl-lg-5 p-1">
-                  <!-- Default input -->
-                  <input type="text" class="form-control" placeholder="name">
-                </div>
-                <!-- Grid column -->
-            
-                <!-- Grid column -->
-                <div class="col-lg-4 pl-lg-5 p-1">
-                  <!-- Default input -->
-                  <input type="text" class="form-control" placeholder="email">
-                </div>
-                <div class="col-lg-4 pl-lg-5 p-1">
-                    <!-- Default input -->
-                    <input type="text" class="form-control" placeholder="location">
-                  </div>
-                <!-- Grid column -->
-                <div class="col-12 text-center mt-2 pt-0">
-                  <button class="btn btn-success ">Submit</button>
-                </div>
-              </div>
-              <!-- Grd row -->
-            </form>
+      <div class="col-12 text-center mt-lg-5 pt-0">
+          <button class="btn btn-success ">Submit</button>
+        </div>
+          
 </div>
 </section>
   <!-- Navbar -->
